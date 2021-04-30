@@ -1,5 +1,8 @@
 name: First Test
-on: push
+push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
 jobs:
   stage-1:
     runs-on: ubuntu-latest
